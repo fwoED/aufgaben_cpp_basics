@@ -1,0 +1,4 @@
+add_task_file(example_divisors)
+add_task_file(example_multiples)
+add_task_file(task_even_below)
+add_task_file(task_repeat)
