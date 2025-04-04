@@ -30,12 +30,12 @@ TEST_CASE("[vectors] task_find_string", "[vectors][tasks]") {
     CHECK(find_string(v, "x") == 5);
   }
   {  // ein Vorkommen
-    std::vector<std::string> v = {"a", "b", "c", "d", "e"};
+    std::vector<std::string> v{"a", "b", "c", "d", "e"};
     CHECK(find_string(v, "a") == 0);
   }
   {  // mehrere Vorkommen
-    std::vector<std::string> v = {"a", "b", "c", "d", "e",
-                                  "a", "b", "c", "d", "e"};
+    std::vector<std::string> v{"a", "b", "c", "d", "e",
+                               "a", "b", "c", "d", "e"};
     CHECK(find_string(v, "b") == 1);
   }
 }
