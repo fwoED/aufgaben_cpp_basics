@@ -1,0 +1,9 @@
+add_executable(guide_tests
+    guide_tests.cpp
+    guide.cpp
+    guide.h
+)
+target_link_libraries(guide_tests
+    Catch2::Catch2WithMain
+)
+catch_discover_tests(guide_tests)
