@@ -12,12 +12,12 @@ TEST_CASE("[tourist_guide] get_place_info", "[tourist_guide][tests]") {
     vector<int> entry_fees{42, 23, 0};
 
     CHECK(get_place_info(places, descriptions, entry_fees, "Eiffelturm") ==
-          make_pair("monstroeser Stahlbau", 42));
+          make_pair<string, int>("monstroeser Stahlbau", 42));
     CHECK(get_place_info(places, descriptions, entry_fees, "Opera House") ==
-          make_pair("Laermquelle", 23));
+          make_pair<string, int>("Laermquelle", 23));
     CHECK(get_place_info(places, descriptions, entry_fees, "DHBW") ==
-          make_pair("Quelle der Erkenntnis", 0));
+          make_pair<string, int>("Quelle der Erkenntnis", 0));
     CHECK(get_place_info(places, descriptions, entry_fees, "Uni Mannheim") ==
-          make_pair("", -1));
+          make_pair<string, int>("", -1));
   }
 }
