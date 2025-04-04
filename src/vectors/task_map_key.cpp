@@ -11,14 +11,7 @@ namespace inf2_basics {
 /// Wenn die ermittelte Position von n in "values" nicht existiert,
 /// wird ebenfalls -1 zurückgegeben.
 int map_key(std::vector<int> keys, std::vector<int> values, int n) {
-  for (int i = 0; i < keys.size(); i++) {
-    if (i >= values.size()) {
-      return -1;
-    }
-    if (keys[i] == n) {
-      return values[i];
-    }
-  }
+  // TODO
   return -1;
 }
 
