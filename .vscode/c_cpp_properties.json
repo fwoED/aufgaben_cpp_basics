@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Inf2",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "__SIZE_TYPE__=size_t"
+            ],
+            "cppStandard": "c++20",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
