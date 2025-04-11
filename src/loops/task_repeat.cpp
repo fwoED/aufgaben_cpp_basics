@@ -7,7 +7,9 @@ namespace inf2_basics {
 /// Liefert eine Liste, in der n count-mal wiederholt wird.
 std::vector<int> repeat(int n, int count) {
   std::vector<int> result;
-  // TODO
+  for(int i = 0; i < count;i++){
+    result.push_back(n);
+  }
   return result;
 }
 

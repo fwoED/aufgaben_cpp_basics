@@ -7,7 +7,10 @@ namespace inf2_basics {
 /// Liefert eine Liste mit allen geraden Zahlen, die kleiner als n sind.
 std::vector<int> even_below(int limit) {
   std::vector<int> result;
-  // TODO
+  for (int i = 0; i < limit; i++){
+    if (i % 2 == 0){
+      result.push_back(i);
+    }  }
   return result;
 }
 

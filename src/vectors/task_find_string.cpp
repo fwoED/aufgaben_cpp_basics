@@ -10,9 +10,15 @@ namespace inf2_basics {
 /// zurückgegeben.
 size_t find_string(std::vector<std::string> v, std::string s) {
   int result = 0;
-  // TODO
-  return v.size();
-}
+  
+  for(int i = 0; i < v.size();i++){
+    if (v[i]==s){
+      result = i;
+      return result;
+    }
+  }
+
+  return v.size();}
 
 TEST_CASE("[vectors] task_find_string", "[vectors][tasks]") {
   {  // leerer vector
