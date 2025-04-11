@@ -11,9 +11,17 @@ namespace inf2_basics {
 /// Wenn die ermittelte Position von n in "values" nicht existiert,
 /// wird ebenfalls -1 zurückgegeben.
 int map_key(std::vector<int> keys, std::vector<int> values, int n) {
-  // TODO
-  return -1;
-}
+  for(int i=0;i< keys.size();i++){
+    if (keys[i] == n) {
+      if (i < values.size()) {
+        return values[i];
+      } else {
+        return -1;
+      }
+    }
+  }
+  return -1;}
+
 
 TEST_CASE("[vectors] task_map_key", "[vectors][tasks]") {
   {  // key und value vorhanden

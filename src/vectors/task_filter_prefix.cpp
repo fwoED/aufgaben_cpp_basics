@@ -11,11 +11,30 @@ namespace inf2_basics {
 std::vector<std::string> filter_prefix(std::vector<std::string> v,
                                        std::string s) {
   std::vector<std::string> result;
-  for(int i = 0;i < v.size();i++){
-    if(v[i]==s){
-      result.push_back(v[i]);
+  int same = 0;
+  
+  if (v.size()==0){
+    return result;
+  }
+  for(int i = 0; i < v.size();i++){
+    std::string b =v[i];
+    same = 0;
+    if (b.size()< s.size()){
+      continue;
+    }
+    for (int x = 0;x<s.size();x++){
+      if(b[x]==s[x]){
+        same++;
+      }else{
+        break;
+      }
+    }
+    if (  same !=0 && same == s.size()){
+      result.push_back(b);
     }
   }
+    
+  
   return result;
 }
 
